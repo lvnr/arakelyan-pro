@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: scroll;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  cursor: none;
+}
+
+.cursor {
+  pointer-events: none;
+
+  &__circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+
+    circle {
+      fill: orange;
+    }
+  }
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
